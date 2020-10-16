@@ -10,19 +10,30 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^0.0.0-experimental-33c3af284",
+    "react-dom": "^0.0.0-experimental-33c3af284",
     "react-scripts": "3.4.1",
+    "resub": "^2.3.0",
+    "resub-entity": "^0.1.2",
+    "rxjs": "^6.5.5",
     "typescript": "~3.7.2"
+  },
+  "devDependencies": {
+    "react-app-rewired": "^2.1.6"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint": "eslint --ext js,ts,tsx src",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "ignorePatterns": [
+      "src/resub-entity/**",
+      "src/resub-entity/index.js"
+    ]
   },
   "browserslist": {
     "production": [
