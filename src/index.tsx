@@ -11,7 +11,7 @@ import * as serviceWorker from './serviceWorker';
 //   document.getElementById('root')
 // );
 
-ReactDOM.unstable_createRoot(
+ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 ).render(<App />);
 
